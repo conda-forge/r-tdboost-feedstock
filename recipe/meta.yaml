@@ -1,4 +1,4 @@
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TDboost_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TDboost/TDboost_{{ version }}.tar.gz
-  sha256: 5a6d353f9125c82733c6ba8d16c9ca7a88757f7c864f9b8180d5ead656b0754d
+  sha256: 4f08359d123a3be2fb12b1e05e6a5c0b6f0a597a31020d610375909bbd79a5d3
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
